@@ -1,17 +1,20 @@
-sdk
+SDK - MERCADOPAGO - CODEIGNITER
 ===
 
-integracao codeigniter
+integracao codeigniter-mercadopago
 
-Usage:
+USO:
 
 COPIAR A PASTA APP PARA SUA APPLICATION DO CODEIGNITER
 
 MODIFICAR application/config/mercadopago.php COM OS VALORES DO MERCADOPAGO "CREDENCIAIS"
 
-PEGUE SEU CLIENT_ID E CLIENT_SECRET NOS ENDEREÇOS:
-
+PEGUE SEU ( CLIENT_ID  ) E ( CLIENT_SECRET ) NOS ENDEREÇOS:
+ 
 Argentina: https://www.mercadopago.com/mla/herramientas/aplicaciones
 Brazil: https://www.mercadopago.com/mlb/ferramentas/aplicacoes
 Mexico: https://www.mercadopago.com/mlm/herramientas/aplicaciones
 Venezuela: https://www.mercadopago.com/mlv/herramientas/aplicaciones
+
+
+FEITO ISSO BASTA VC UTILIZAR OU ACRESCENTAR MELHORIAS JUNTO AS CONFIGURAÇÕES DO MERCADOPAGO .
