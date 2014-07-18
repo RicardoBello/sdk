@@ -1,17 +1,16 @@
-<?php
-$this->load->view('escritorio/header');
-?>
-
-<div id="conteudo">
-    <div class="box">
-        <h2 class="titulo"><?php echo $titulo; ?></h2>
+<heade>
+</head>
+<body>
+<div>
+    <div>
+        <h2>pagamento com MercadoPago</h2>
         <br />
         <br />
         <div>
-            <table style="margin: 0 auto !important; float: none !important;">
+            <table >
                 <tr>
                     <td>
-                        <div class="span2 offset2">
+                        <div >
                             <!--
                             aqui vai o botão mercado pago
                             -->
@@ -39,17 +38,10 @@ $this->load->view('escritorio/header');
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        <h5><b>* Para esta operação serão acrescidas as taxas de utilização do PagSeguro.</b></h5>
-                    </td>
-                </tr>
             </table>
         </div>
         <br />
     </div>
 </div>
 
-<?php
-$this->load->view('escritorio/footer');
-?>
+</body>
