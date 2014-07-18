@@ -4,7 +4,7 @@
  * Access MercadoPago for payments integration
  * 
  * @author hcasatti
- *
+ * @atualizacao construct : Ricardo Bello
  */
 $GLOBALS["LIB_LOCATION"] = dirname(__FILE__);
 
