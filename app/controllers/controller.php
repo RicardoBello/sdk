@@ -19,9 +19,12 @@ class Produtos extends CI_Controller {
                 $this->load->library('mp');
                 
                 //carregar as compras 
+                
                 $preference_data = array();
                 $preference_data["items"] = array();
                 
+                //podendo vir de um um bancode dados do sistema 
+                //ou individual pra cada button de compra nesse caso nao utilizar o foreach (...)
                 foreach ($carrinho AS $rowid => $row) {
                     $preference_data['items'][] = array(
                         'title'         => $row['nome'] ,
@@ -61,23 +64,21 @@ class Produtos extends CI_Controller {
                 );
                 
                 $preference_data['back_urls'] = array(
-                    'success' => 'http://localhost/testeoffice.lionsessence.com.br/escritorio/produtos/lista',
-                    'pending' => 'http://localhost/testeoffice.lionsessence.com.br/escritorio/produtos/lista',
-                    'failure' => 'http://localhost/testeoffice.lionsessence.com.br/escritorio/produtos/lista'
+                    'success' => 'http://caminho_do_seu_site/conforme_desejar',
+                    'pending' => 'http://caminho_do_seu_site/conforme_desejar',
+                    'failure' => 'http://caminho_do_seu_site/conforme_desejar'
                 );
                 
                 $preference = $this->mp->create_preference($preference_data);
                 
-                $data['bt'] = $preference['response']['init_point'];/* sandbox_init_point - para teste */
+                $data['bt'] = $preference['response']['init_point'];/* utilizar -> sandbox_init_point - para teste */
                 $data['titulo'] = 'MercadoPago On-Line';
-                $data['pagina'] = 'produtos';
-                $data['submenu'] = '';
                 $this->load->view('button_mercadopago', $data);
             }
         } 
         else 
         {
-            redirect('index');
+            redirect('index'); // em caso de erro ...
         }
     }
   
